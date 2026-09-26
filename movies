@@ -1,1 +1,22 @@
+"""
+Midterm Practical Exam — Movie Collection Manager
+Student: Galvez, Mitchie T.
+"""
+movie_title = "Inception"
+directory = "Christopher Nolan"
+status = "Watched"
 
+print(f"{movie_title} {directory} {status}")
+
+movies = ["Emily in paris", "Spiderman", "Yourname",]
+
+
+def display_menu():
+    print()
+    # print the menu
+    # return the user's choice
+    
+
+
+
+    
