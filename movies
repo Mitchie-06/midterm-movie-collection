@@ -12,10 +12,53 @@ movies = ["Emily in paris", "Spiderman", "Yourname",]
 
 
 def display_menu():
-    print()
+    print("== Movie Collection Manager ==")
+    print("1. Add a movie",)
+    print("2. View all movies")
+    print("3. Count watched vs unwatched")
+    print("4. Find a movie") 
+    print("5. Exit")
+
+    
+    choice = input("Choose an option: ").strip()
+
+    if choice == "1":
+        print("Add a new movie")
+    elif choice == "2":
+        print("View all movies")
+        
+    elif choice == "3":
+        print("Count watched vs unwatched")
+    elif choice == "4":
+        print("Find a movie")
+    elif choice == "5":
+        print("Exit")
+        exit()
+    else:
+        print("Invalid choice! Please enter 1, 2, 3, 4, or 5.")
+
     # print the menu
     # return the user's choice
-    
+
+display_menu()
+
+def add_movie():
+
+    print("Enter title: ")
+    title = input()
+
+    print("Enter directory: ")
+    directory = input()
+
+    print("Enter Status: ")
+    status = input()
+
+    print (f"Hello! You added {title} {directory} {status}")
+    # ask for title, director, and status
+    # build the movie string
+    # add it to the list
+
+add_movie()    
 
 
 
