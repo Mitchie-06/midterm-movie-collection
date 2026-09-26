@@ -12,7 +12,9 @@ movie_list = ["Emily in paris", "Spiderman", "Yourname",]
 
 
 def display_menu():
+    print()
     print("== Movie Collection Manager ==")
+    print()
     print("1. Add a movie",)
     print("2. View all movies")
     print("3. Count watched vs unwatched")
@@ -24,8 +26,38 @@ def display_menu():
 
     if choice == "1":
         print("Add a new movie")
+        def add_movie():
+            print()
+            print("== Add a movie ==")
+            print()
+            print("Enter title: ")
+            title = input()
+
+            print("Enter directory: ")
+            directory = input()
+
+            print("Enter Status: ")
+            status = input()
+
+            print (f"Movie {title} {directory} {status} added successfully.")
+            # ask for title, director, and status
+            # build the movie string
+            # add it to the list
+
+        add_movie()    
+
+
+
     elif choice == "2":
         print("View all movies")
+        def view_movies():
+        
+                    movies = ["Emily in paris", "Spiderman", "Yourname",]
+                    for x in movie_list:
+                        print(x)
+            # loop through and print every movie
+            # handle empty list
+        view_movies()
         
     elif choice == "3":
         print("Count watched vs unwatched")
@@ -40,33 +72,3 @@ def display_menu():
     # return the user's choice
 
 display_menu()
-
-def add_movie():
-    print("== Add a movie ==")
-
-    print("Enter title: ")
-    title = input()
-
-    print("Enter directory: ")
-    directory = input()
-
-    print("Enter Status: ")
-    status = input()
-
-    print (f"Movie {title} {directory} {status} added successfully.")
-    # ask for title, director, and status
-    # build the movie string
-    # add it to the list
-
-add_movie()    
-
-
-def view_movies():
-    print("== Movie Lists ==")
-
-    movies = ["Emily in paris", "Spiderman", "Yourname",]
-for x in movie_list:
-  print(x)
-    # loop through and print every movie
-    # handle empty list
-view_movies()
