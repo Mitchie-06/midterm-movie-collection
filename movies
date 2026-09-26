@@ -61,6 +61,19 @@ def display_menu():
         
     elif choice == "3":
         print("Count watched vs unwatched")
+        def count_watched_unwatched():
+            history = [True]
+
+            watched_count = history.count(True)
+            unwatched_count = history.count(False)
+
+            print(f"Watched: {watched_count}")    
+            print(f"Unwatched: {unwatched_count}") 
+
+        count_watched_unwatched()
+
+
+
     elif choice == "4":
         print("Find a movie")
     elif choice == "5":
@@ -72,3 +85,4 @@ def display_menu():
     # return the user's choice
 
 display_menu()
+
